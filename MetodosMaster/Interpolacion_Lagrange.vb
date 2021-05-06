@@ -9,10 +9,15 @@
     Dim i, c, redon, ib, grado As Integer
 
     Private Sub btnGraficar_Click(sender As Object, e As EventArgs) Handles btnGraficar.Click
-
+        g = CreateGraphics() 'definir variable
+        For i = 0 To n - 1
+            Grafica.Series(0).Points.AddXY(Math.Round(x(i), 2), y(i))
+        Next
+        Grafica.Series(1).Points.AddXY(Math.Round(vx, 2), vy)
     End Sub
 
     Dim n, vx, vy, x(), y() As Single
+    Dim g As Graphics
 
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
         End
@@ -47,4 +52,6 @@
         ib = i - 1
         txtIb.Text = ib
     End Sub
+
+
 End Class

@@ -82,21 +82,21 @@ Partial Class minimosCuadrados
         '
         'tc
         '
-        Me.tc.Location = New System.Drawing.Point(256, 118)
+        Me.tc.Location = New System.Drawing.Point(807, 131)
         Me.tc.Name = "tc"
         Me.tc.Size = New System.Drawing.Size(100, 22)
         Me.tc.TabIndex = 35
         '
         'tvx
         '
-        Me.tvx.Location = New System.Drawing.Point(256, 72)
+        Me.tvx.Location = New System.Drawing.Point(807, 85)
         Me.tvx.Name = "tvx"
         Me.tvx.Size = New System.Drawing.Size(100, 22)
         Me.tvx.TabIndex = 34
         '
         'tn
         '
-        Me.tn.Location = New System.Drawing.Point(256, 26)
+        Me.tn.Location = New System.Drawing.Point(807, 39)
         Me.tn.Name = "tn"
         Me.tn.Size = New System.Drawing.Size(100, 22)
         Me.tn.TabIndex = 33
@@ -104,51 +104,61 @@ Partial Class minimosCuadrados
         'lblNum
         '
         Me.lblNum.AutoSize = True
-        Me.lblNum.Location = New System.Drawing.Point(34, 121)
+        Me.lblNum.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblNum.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblNum.Location = New System.Drawing.Point(562, 131)
         Me.lblNum.Name = "lblNum"
-        Me.lblNum.Size = New System.Drawing.Size(126, 17)
+        Me.lblNum.Size = New System.Drawing.Size(194, 25)
         Me.lblNum.TabIndex = 32
         Me.lblNum.Text = "cifras significativas"
         '
         'lblParejas
         '
         Me.lblParejas.AutoSize = True
-        Me.lblParejas.Location = New System.Drawing.Point(34, 75)
+        Me.lblParejas.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblParejas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblParejas.Location = New System.Drawing.Point(573, 85)
         Me.lblParejas.Name = "lblParejas"
-        Me.lblParejas.Size = New System.Drawing.Size(120, 17)
+        Me.lblParejas.Size = New System.Drawing.Size(180, 25)
         Me.lblParejas.TabIndex = 31
         Me.lblParejas.Text = "numero interpolar"
         '
         'lblCifras
         '
         Me.lblCifras.AutoSize = True
-        Me.lblCifras.Location = New System.Drawing.Point(34, 29)
+        Me.lblCifras.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblCifras.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblCifras.Location = New System.Drawing.Point(595, 39)
         Me.lblCifras.Name = "lblCifras"
-        Me.lblCifras.Size = New System.Drawing.Size(107, 17)
+        Me.lblCifras.Size = New System.Drawing.Size(161, 25)
         Me.lblCifras.TabIndex = 30
         Me.lblCifras.Text = "numero parejas"
         '
         'btnParejas
         '
-        Me.btnParejas.Location = New System.Drawing.Point(440, 23)
+        Me.btnParejas.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnParejas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.btnParejas.Location = New System.Drawing.Point(968, 33)
         Me.btnParejas.Name = "btnParejas"
-        Me.btnParejas.Size = New System.Drawing.Size(143, 23)
+        Me.btnParejas.Size = New System.Drawing.Size(158, 31)
         Me.btnParejas.TabIndex = 36
         Me.btnParejas.Text = "Introducir parejas"
-        Me.btnParejas.UseVisualStyleBackColor = True
+        Me.btnParejas.UseVisualStyleBackColor = False
         '
         'graficar
         '
-        Me.graficar.Location = New System.Drawing.Point(440, 98)
+        Me.graficar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.graficar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.graficar.Location = New System.Drawing.Point(968, 125)
         Me.graficar.Name = "graficar"
-        Me.graficar.Size = New System.Drawing.Size(143, 23)
+        Me.graficar.Size = New System.Drawing.Size(158, 41)
         Me.graficar.TabIndex = 37
         Me.graficar.Text = "graficar"
-        Me.graficar.UseVisualStyleBackColor = True
+        Me.graficar.UseVisualStyleBackColor = False
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(256, 165)
+        Me.TextBox1.Location = New System.Drawing.Point(807, 178)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 22)
         Me.TextBox1.TabIndex = 39
@@ -156,9 +166,11 @@ Partial Class minimosCuadrados
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(34, 168)
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Label1.Location = New System.Drawing.Point(621, 178)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(89, 17)
+        Me.Label1.Size = New System.Drawing.Size(135, 25)
         Me.Label1.TabIndex = 38
         Me.Label1.Text = "interpolacion"
         '
@@ -194,26 +206,31 @@ Partial Class minimosCuadrados
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(440, 142)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Button1.Location = New System.Drawing.Point(968, 172)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(143, 23)
+        Me.Button1.Size = New System.Drawing.Size(158, 31)
         Me.Button1.TabIndex = 41
         Me.Button1.Text = "salir"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'btnCalcular
         '
-        Me.btnCalcular.Location = New System.Drawing.Point(440, 69)
+        Me.btnCalcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnCalcular.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.btnCalcular.Location = New System.Drawing.Point(968, 79)
         Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(143, 23)
+        Me.btnCalcular.Size = New System.Drawing.Size(158, 31)
         Me.btnCalcular.TabIndex = 42
         Me.btnCalcular.Text = "Calcular"
-        Me.btnCalcular.UseVisualStyleBackColor = True
+        Me.btnCalcular.UseVisualStyleBackColor = False
         '
         'minimosCuadrados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.MetodosMaster.My.Resources.Resources.xx
         Me.ClientSize = New System.Drawing.Size(1175, 617)
         Me.Controls.Add(Me.btnCalcular)
         Me.Controls.Add(Me.Button1)

@@ -148,6 +148,12 @@
     <Compile Include="RaizOriginal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ReglaFalsa.Designer.vb">
+      <DependentUpon>ReglaFalsa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReglaFalsa.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Biseccion.resx">
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RaizOriginal.resx">
       <DependentUpon>RaizOriginal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReglaFalsa.resx">
+      <DependentUpon>ReglaFalsa.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

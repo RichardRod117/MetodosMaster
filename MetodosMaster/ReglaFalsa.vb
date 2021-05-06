@@ -1,5 +1,5 @@
 ﻿Imports info.lundin.math
-Public Class Biseccion
+Public Class ReglaFalsa
     Dim a As Single
     Dim b As Single
     Dim c As Integer
@@ -30,8 +30,8 @@ Public Class Biseccion
         c = tc.Text
         ec = 0.5 * 10 ^ (-c)
         redon = c + 2
-        x(i) = (a + b) / 2
-        'x(i) = ((a * f(b) - b * f(a)) / (f(b) - f(a)))
+        'x(i) = (a + b) / 2
+        x(i) = ((a * f(b) - b * f(a)) / (f(b) - f(a)))
         err(i) = 1
         Salida.Rows.Add(i, Math.Round(a, redon), Math.Round(x(i), redon),
                             Math.Round(b, redon), Math.Round(f(a), redon), Math.Round(f(x(i)), redon),
@@ -43,8 +43,8 @@ Public Class Biseccion
                 a = x(i)
             End If
             i = i + 1
-            x(i) = (a + b) / 2
-            'x(i) = ((a * f(b) - b * f(a)) / (f(b) - f(a)))
+            'x(i) = (a + b) / 2
+            x(i) = ((a * f(b) - b * f(a)) / (f(b) - f(a)))
             err(i) = Math.Abs((x(i) - x(i - 1)) / x(i))
 
             Salida.Rows.Add(i, Math.Round(a, redon), Math.Round(x(i), redon),
@@ -54,7 +54,7 @@ Public Class Biseccion
         txtResultado.Text = Math.Round(x(i), redon)
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
 End Class

@@ -31,7 +31,7 @@
     End Sub
 
     Private Sub btnReglaF_Click(sender As Object, e As EventArgs) Handles btnReglaF.Click
-
+        ReglaFalsa.Show()
     End Sub
 
     Private Sub GE_Click(sender As Object, e As EventArgs) Handles GE.Click

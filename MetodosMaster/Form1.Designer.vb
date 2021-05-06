@@ -69,7 +69,7 @@ Partial Class Main
         Me.Btn_Biseccion.Name = "Btn_Biseccion"
         Me.Btn_Biseccion.Size = New System.Drawing.Size(200, 50)
         Me.Btn_Biseccion.TabIndex = 2
-        Me.Btn_Biseccion.Text = "Biseccion 2***"
+        Me.Btn_Biseccion.Text = "Biseccion "
         Me.Btn_Biseccion.UseVisualStyleBackColor = False
         '
         'btnReglaF
