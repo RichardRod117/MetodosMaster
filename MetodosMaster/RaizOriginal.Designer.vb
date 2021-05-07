@@ -27,11 +27,11 @@ Partial Class RaizOriginal
         Me.Salir = New System.Windows.Forms.Button()
         Me.Calcular = New System.Windows.Forms.Button()
         Me.Salida = New System.Windows.Forms.DataGridView()
+        Me.Ti = New System.Windows.Forms.TextBox()
+        Me.ln = New System.Windows.Forms.Label()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Ti = New System.Windows.Forms.TextBox()
-        Me.ln = New System.Windows.Forms.Label()
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -86,27 +86,6 @@ Partial Class RaizOriginal
         Me.Salida.Size = New System.Drawing.Size(688, 171)
         Me.Salida.TabIndex = 19
         '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Indice"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 125
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Raiz"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 125
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Error"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.Width = 125
-        '
         'Ti
         '
         Me.Ti.Location = New System.Drawing.Point(215, 265)
@@ -125,6 +104,27 @@ Partial Class RaizOriginal
         Me.ln.TabIndex = 17
         Me.ln.Text = "Dame inicio"
         '
+        'Column1
+        '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column1.HeaderText = "Indice"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column2.HeaderText = "Raiz"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.HeaderText = "Error"
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
+        '
         'RaizOriginal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -139,6 +139,7 @@ Partial Class RaizOriginal
         Me.Controls.Add(Me.Ti)
         Me.Controls.Add(Me.ln)
         Me.Name = "RaizOriginal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Raiz de dos"
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -151,9 +152,9 @@ Partial Class RaizOriginal
     Friend WithEvents Salir As Button
     Friend WithEvents Calcular As Button
     Friend WithEvents Salida As DataGridView
+    Friend WithEvents Ti As TextBox
+    Friend WithEvents ln As Label
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Ti As TextBox
-    Friend WithEvents ln As Label
 End Class

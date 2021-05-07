@@ -25,10 +25,10 @@ Partial Class Imp
         Me.Salir = New System.Windows.Forms.Button()
         Me.Calcular = New System.Windows.Forms.Button()
         Me.Salida = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Tn = New System.Windows.Forms.TextBox()
         Me.ln = New System.Windows.Forms.Label()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -65,20 +65,6 @@ Partial Class Imp
         Me.Salida.Size = New System.Drawing.Size(429, 150)
         Me.Salida.TabIndex = 7
         '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Indice"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 125
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Impares"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 125
-        '
         'Tn
         '
         Me.Tn.Location = New System.Drawing.Point(745, 38)
@@ -97,6 +83,20 @@ Partial Class Imp
         Me.ln.TabIndex = 5
         Me.ln.Text = "Dame numero de impares"
         '
+        'Column1
+        '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column1.HeaderText = "Indice"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column2.HeaderText = "Impares"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        '
         'Imp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -109,6 +109,7 @@ Partial Class Imp
         Me.Controls.Add(Me.Tn)
         Me.Controls.Add(Me.ln)
         Me.Name = "Imp"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Impares"
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -119,8 +120,8 @@ Partial Class Imp
     Friend WithEvents Salir As Button
     Friend WithEvents Calcular As Button
     Friend WithEvents Salida As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Tn As TextBox
     Friend WithEvents ln As Label
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
 End Class

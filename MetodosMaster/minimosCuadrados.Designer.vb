@@ -247,6 +247,7 @@ Partial Class minimosCuadrados
         Me.Controls.Add(Me.lblCifras)
         Me.Controls.Add(Me.dgvSalida)
         Me.Name = "minimosCuadrados"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "minimosCuadrados"
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Gráfica, System.ComponentModel.ISupportInitialize).EndInit()

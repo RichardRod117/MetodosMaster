@@ -25,9 +25,6 @@ Partial Class RaizC2
         Me.Salir = New System.Windows.Forms.Button()
         Me.Calcular = New System.Windows.Forms.Button()
         Me.Salida = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Ti = New System.Windows.Forms.TextBox()
         Me.ln = New System.Windows.Forms.Label()
         Me.Tc = New System.Windows.Forms.TextBox()
@@ -37,6 +34,9 @@ Partial Class RaizC2
         Me.Label2 = New System.Windows.Forms.Label()
         Me.tfd = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -73,27 +73,6 @@ Partial Class RaizC2
         Me.Salida.RowTemplate.Height = 24
         Me.Salida.Size = New System.Drawing.Size(688, 171)
         Me.Salida.TabIndex = 12
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Indice"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 125
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Raiz"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 125
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Error"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.Width = 125
         '
         'Ti
         '
@@ -176,6 +155,27 @@ Partial Class RaizC2
         Me.Label3.TabIndex = 20
         Me.Label3.Text = "Dame derivada"
         '
+        'Column1
+        '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column1.HeaderText = "Indice"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column2.HeaderText = "Raiz"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.HeaderText = "Error"
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
+        '
         'RaizC2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -195,6 +195,7 @@ Partial Class RaizC2
         Me.Controls.Add(Me.Ti)
         Me.Controls.Add(Me.ln)
         Me.Name = "RaizC2"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RaizCuadrada"
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -210,12 +211,12 @@ Partial Class RaizC2
     Friend WithEvents ln As Label
     Friend WithEvents Tc As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents tf As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents tfd As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
 End Class

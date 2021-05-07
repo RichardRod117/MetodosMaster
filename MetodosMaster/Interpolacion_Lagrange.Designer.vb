@@ -22,10 +22,10 @@ Partial Class Interpolacion_Lagrange
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.txtInterpolacion = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtIb = New System.Windows.Forms.TextBox()
@@ -230,24 +230,24 @@ Partial Class Interpolacion_Lagrange
         '
         'Grafica
         '
-        ChartArea3.Name = "ChartArea1"
-        Me.Grafica.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.Grafica.Legends.Add(Legend3)
+        ChartArea1.Name = "ChartArea1"
+        Me.Grafica.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Grafica.Legends.Add(Legend1)
         Me.Grafica.Location = New System.Drawing.Point(12, 226)
         Me.Grafica.Name = "Grafica"
-        Series5.ChartArea = "ChartArea1"
-        Series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point
-        Series5.Color = System.Drawing.Color.Blue
-        Series5.Legend = "Legend1"
-        Series5.Name = "Series1"
-        Series6.ChartArea = "ChartArea1"
-        Series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point
-        Series6.Color = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Series6.Legend = "Legend1"
-        Series6.Name = "Series2"
-        Me.Grafica.Series.Add(Series5)
-        Me.Grafica.Series.Add(Series6)
+        Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point
+        Series1.Color = System.Drawing.Color.Blue
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Series2.ChartArea = "ChartArea1"
+        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point
+        Series2.Color = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series2"
+        Me.Grafica.Series.Add(Series1)
+        Me.Grafica.Series.Add(Series2)
         Me.Grafica.Size = New System.Drawing.Size(489, 300)
         Me.Grafica.TabIndex = 34
         Me.Grafica.Text = "Chart1"
@@ -276,6 +276,7 @@ Partial Class Interpolacion_Lagrange
         Me.Controls.Add(Me.lblParejas)
         Me.Controls.Add(Me.lblCifras)
         Me.Name = "Interpolacion_Lagrange"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Interpolacion_Lagrange"
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Grafica, System.ComponentModel.ISupportInitialize).EndInit()

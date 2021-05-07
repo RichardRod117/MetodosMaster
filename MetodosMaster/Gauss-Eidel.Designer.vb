@@ -490,6 +490,7 @@ Partial Class Gauss_Eidel
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtCifras)
         Me.Name = "Gauss_Eidel"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gauss_Eidel"
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

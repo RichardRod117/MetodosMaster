@@ -89,7 +89,8 @@
     End Sub
 
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
-        End
+        Me.Hide()
+        Main.Show()
     End Sub
     Private Sub btnCoeficientes_Click(sender As Object, e As EventArgs) Handles btnCoeficientes.Click
         For i = 1 To 3

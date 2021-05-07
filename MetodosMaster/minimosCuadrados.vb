@@ -24,7 +24,8 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        End
+        Me.Hide()
+        Main.Show()
     End Sub
 
     Dim n, vx, vy, x(), y(), sx, sy, scx, sxy, a, b, xmedia, ymedia As Single

@@ -490,6 +490,7 @@ Partial Class JACOBI
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtCifras)
         Me.Name = "JACOBI"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "JACOBI"
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -29,14 +29,6 @@ Partial Class ReglaFalsa
         Me.txtResultado = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Salida = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tc = New System.Windows.Forms.TextBox()
         Me.lc = New System.Windows.Forms.Label()
         Me.tb = New System.Windows.Forms.TextBox()
@@ -47,6 +39,14 @@ Partial Class ReglaFalsa
         Me.Calcular = New System.Windows.Forms.Button()
         Me.tf = New System.Windows.Forms.TextBox()
         Me.lf = New System.Windows.Forms.Label()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -113,65 +113,8 @@ Partial Class ReglaFalsa
         Me.Salida.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.Salida.RowHeadersWidth = 51
         Me.Salida.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.Salida.Size = New System.Drawing.Size(886, 197)
+        Me.Salida.Size = New System.Drawing.Size(873, 197)
         Me.Salida.TabIndex = 42
-        '
-        'Column1
-        '
-        Me.Column1.FillWeight = 80.0!
-        Me.Column1.HeaderText = "Índice"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 70
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "a"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 70
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "xi"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.Width = 70
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "b"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 70
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "f(a)"
-        Me.Column5.MinimumWidth = 6
-        Me.Column5.Name = "Column5"
-        Me.Column5.Width = 70
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "f(xi)"
-        Me.Column6.MinimumWidth = 6
-        Me.Column6.Name = "Column6"
-        Me.Column6.Width = 70
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "f(b)"
-        Me.Column7.MinimumWidth = 6
-        Me.Column7.Name = "Column7"
-        Me.Column7.Width = 70
-        '
-        'Column8
-        '
-        Me.Column8.HeaderText = "error"
-        Me.Column8.MinimumWidth = 6
-        Me.Column8.Name = "Column8"
-        Me.Column8.Width = 70
         '
         'tc
         '
@@ -267,6 +210,63 @@ Partial Class ReglaFalsa
         Me.lf.TabIndex = 32
         Me.lf.Text = "Dame funcion"
         '
+        'Column1
+        '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column1.FillWeight = 80.0!
+        Me.Column1.HeaderText = "Índice"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column2.HeaderText = "a"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.HeaderText = "xi"
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column4.HeaderText = "b"
+        Me.Column4.MinimumWidth = 6
+        Me.Column4.Name = "Column4"
+        '
+        'Column5
+        '
+        Me.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column5.HeaderText = "f(a)"
+        Me.Column5.MinimumWidth = 6
+        Me.Column5.Name = "Column5"
+        '
+        'Column6
+        '
+        Me.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column6.HeaderText = "f(xi)"
+        Me.Column6.MinimumWidth = 6
+        Me.Column6.Name = "Column6"
+        '
+        'Column7
+        '
+        Me.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column7.HeaderText = "f(b)"
+        Me.Column7.MinimumWidth = 6
+        Me.Column7.Name = "Column7"
+        '
+        'Column8
+        '
+        Me.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column8.HeaderText = "error"
+        Me.Column8.MinimumWidth = 6
+        Me.Column8.Name = "Column8"
+        '
         'ReglaFalsa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -288,6 +288,7 @@ Partial Class ReglaFalsa
         Me.Controls.Add(Me.tf)
         Me.Controls.Add(Me.lf)
         Me.Name = "ReglaFalsa"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ReglaFalsa"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).EndInit()
@@ -300,14 +301,6 @@ Partial Class ReglaFalsa
     Friend WithEvents txtResultado As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Salida As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewTextBoxColumn
     Friend WithEvents tc As TextBox
     Friend WithEvents lc As Label
     Friend WithEvents tb As TextBox
@@ -318,4 +311,12 @@ Partial Class ReglaFalsa
     Friend WithEvents Calcular As Button
     Friend WithEvents tf As TextBox
     Friend WithEvents lf As Label
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
 End Class
