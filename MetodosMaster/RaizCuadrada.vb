@@ -7,7 +7,8 @@ Public Class RaizC2
     Dim err(50) As Single
     Dim redon As Integer
     Private Sub Salir_Click(sender As Object, e As EventArgs) Handles Salir.Click
-        End
+        Me.Hide()
+        Main.Show()
     End Sub
 
     Function f(x As Single) As Single

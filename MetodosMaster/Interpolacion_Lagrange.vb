@@ -17,10 +17,12 @@
     End Sub
 
     Dim n, vx, vy, x(), y() As Single
+
     Dim g As Graphics
 
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
-        End
+        Me.Hide()
+        Main.Show()
     End Sub
 
     Private Sub cmbGrado_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbGrado.SelectedIndexChanged

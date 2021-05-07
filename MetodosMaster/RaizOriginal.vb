@@ -21,6 +21,7 @@
     End Sub
 
     Private Sub Salir_Click(sender As Object, e As EventArgs) Handles Salir.Click
-        End
+        Me.Hide()
+        Main.Show()
     End Sub
 End Class

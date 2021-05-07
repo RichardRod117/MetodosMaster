@@ -21,7 +21,8 @@ Public Class ReglaFalsa
     End Function
 
     Private Sub Salir_Click(sender As Object, e As EventArgs) Handles Salir.Click
-        End
+        Me.Hide()
+        Main.Show()
     End Sub
 
     Private Sub Calcular_Click(sender As Object, e As EventArgs) Handles Calcular.Click

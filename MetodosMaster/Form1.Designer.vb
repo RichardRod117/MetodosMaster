@@ -166,7 +166,7 @@ Partial Class Main
         Me.Controls.Add(Me.Raiz)
         Me.Controls.Add(Me.Impares)
         Me.Name = "Main"
-        Me.Text = "Form1"
+        Me.Text = "MENÚ"
         Me.ResumeLayout(False)
 
     End Sub
