@@ -134,7 +134,7 @@ Partial Class Main
         Me.GE.Name = "GE"
         Me.GE.Size = New System.Drawing.Size(200, 50)
         Me.GE.TabIndex = 7
-        Me.GE.Text = "Gauss-Eidel"
+        Me.GE.Text = "Gauss-Seidel"
         Me.GE.UseVisualStyleBackColor = False
         '
         'Button3
