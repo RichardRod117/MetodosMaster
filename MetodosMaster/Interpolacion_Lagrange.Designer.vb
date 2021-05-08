@@ -35,7 +35,6 @@ Partial Class Interpolacion_Lagrange
         Me.txtCifras = New System.Windows.Forms.TextBox()
         Me.cmbGrado = New System.Windows.Forms.ComboBox()
         Me.btnSalir = New System.Windows.Forms.Button()
-        Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnGraficar = New System.Windows.Forms.Button()
         Me.btnParejas = New System.Windows.Forms.Button()
         Me.dgvSalida = New System.Windows.Forms.DataGridView()
@@ -123,23 +122,12 @@ Partial Class Interpolacion_Lagrange
         '
         Me.btnSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        Me.btnSalir.Location = New System.Drawing.Point(1093, 438)
+        Me.btnSalir.Location = New System.Drawing.Point(1093, 423)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(118, 37)
         Me.btnSalir.TabIndex = 25
         Me.btnSalir.Text = "Salir"
         Me.btnSalir.UseVisualStyleBackColor = False
-        '
-        'btnLimpiar
-        '
-        Me.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.btnLimpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        Me.btnLimpiar.Location = New System.Drawing.Point(1093, 386)
-        Me.btnLimpiar.Name = "btnLimpiar"
-        Me.btnLimpiar.Size = New System.Drawing.Size(118, 46)
-        Me.btnLimpiar.TabIndex = 24
-        Me.btnLimpiar.Text = "Limpiar"
-        Me.btnLimpiar.UseVisualStyleBackColor = False
         '
         'btnGraficar
         '
@@ -268,7 +256,6 @@ Partial Class Interpolacion_Lagrange
         Me.Controls.Add(Me.txtCifras)
         Me.Controls.Add(Me.cmbGrado)
         Me.Controls.Add(Me.btnSalir)
-        Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.btnGraficar)
         Me.Controls.Add(Me.btnParejas)
         Me.Controls.Add(Me.dgvSalida)
@@ -294,7 +281,6 @@ Partial Class Interpolacion_Lagrange
     Friend WithEvents txtCifras As TextBox
     Friend WithEvents cmbGrado As ComboBox
     Friend WithEvents btnSalir As Button
-    Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnGraficar As Button
     Friend WithEvents btnParejas As Button
     Friend WithEvents dgvSalida As DataGridView

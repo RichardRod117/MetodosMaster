@@ -17,6 +17,7 @@
     End Sub
 
     Dim n, vx, vy, x(), y() As Single
+
     Dim g As Graphics
 
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
