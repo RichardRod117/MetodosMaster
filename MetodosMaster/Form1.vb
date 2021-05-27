@@ -37,11 +37,26 @@
 
     Private Sub GE_Click(sender As Object, e As EventArgs) Handles GE.Click
         Me.Hide()
-        Gauss_Eidel.Show()
+        Gauss_Seidel.Show()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Hide()
         minimosCuadrados.Show()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.Hide()
+        Integracion_rectangulos.Show()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Me.Hide()
+        Integracion_trapecios.Show()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Me.Hide()
+        Simpson_1_3.Show()
     End Sub
 End Class

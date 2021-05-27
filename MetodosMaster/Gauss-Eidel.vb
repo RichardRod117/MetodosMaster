@@ -1,4 +1,4 @@
-﻿Public Class Gauss_Eidel
+﻿Public Class Gauss_Seidel
 
     Dim i, j, c, redon As Integer
     Dim x(50), y(50), z(50), ex(50), ey(50), ez(50), ec, a(3, 3), b(3) As Single

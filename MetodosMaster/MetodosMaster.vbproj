@@ -103,6 +103,18 @@
     <Compile Include="Impares.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Integracion_rectangulos.Designer.vb">
+      <DependentUpon>Integracion_rectangulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Integracion_rectangulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Integracion_trapecios.Designer.vb">
+      <DependentUpon>Integracion_trapecios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Integracion_trapecios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interpolacion_Lagrange.Designer.vb">
       <DependentUpon>Interpolacion_Lagrange.vb</DependentUpon>
     </Compile>
@@ -154,6 +166,12 @@
     <Compile Include="ReglaFalsa.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Simpson_1_3.Designer.vb">
+      <DependentUpon>Simpson_1_3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Simpson_1_3.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Biseccion.resx">
@@ -167,6 +185,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Impares.resx">
       <DependentUpon>Impares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Integracion_rectangulos.resx">
+      <DependentUpon>Integracion_rectangulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Integracion_trapecios.resx">
+      <DependentUpon>Integracion_trapecios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interpolacion_Lagrange.resx">
       <DependentUpon>Interpolacion_Lagrange.vb</DependentUpon>
@@ -191,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReglaFalsa.resx">
       <DependentUpon>ReglaFalsa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simpson_1_3.resx">
+      <DependentUpon>Simpson_1_3.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

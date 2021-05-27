@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Gauss_Eidel
+Partial Class Gauss_Seidel
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -449,7 +449,7 @@ Partial Class Gauss_Eidel
         Me.txtCifras.Size = New System.Drawing.Size(100, 22)
         Me.txtCifras.TabIndex = 63
         '
-        'Gauss_Eidel
+        'Gauss_Seidel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -489,7 +489,7 @@ Partial Class Gauss_Eidel
         Me.Controls.Add(Me.txt2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtCifras)
-        Me.Name = "Gauss_Eidel"
+        Me.Name = "Gauss_Seidel"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Gauss_Eidel"
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).EndInit()

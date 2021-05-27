@@ -14,6 +14,8 @@
 
     End Sub
 
+
+
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
         xmedia = sx / n
         ymedia = sy / n
