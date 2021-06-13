@@ -60,14 +60,6 @@
         Simpson_1_3.Show()
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-
-    End Sub
-
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-        End
-    End Sub
-
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         Me.Hide()
         Euler.Show()
@@ -76,5 +68,9 @@
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         Me.Hide()
         EulerMejorado.Show()
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        End
     End Sub
 End Class
