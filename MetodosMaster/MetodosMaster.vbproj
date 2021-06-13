@@ -84,6 +84,18 @@
     <Compile Include="Biseccion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Euler.Designer.vb">
+      <DependentUpon>Euler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Euler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EulerMejorado.Designer.vb">
+      <DependentUpon>EulerMejorado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EulerMejorado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +188,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Biseccion.resx">
       <DependentUpon>Biseccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Euler.resx">
+      <DependentUpon>Euler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EulerMejorado.resx">
+      <DependentUpon>EulerMejorado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -270,6 +288,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\xx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portada1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portada2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

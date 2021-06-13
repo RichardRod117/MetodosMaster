@@ -46,4 +46,13 @@ Public Class RaizC2
             Salida.Rows.Add(i, Math.Round(x(i), redon), Math.Round(err(i), redon))
         Loop
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        tf.Clear()
+        tfd.Clear()
+        Tc.Clear()
+        Ti.Clear()
+        Salida.Rows.Clear()
+
+    End Sub
 End Class

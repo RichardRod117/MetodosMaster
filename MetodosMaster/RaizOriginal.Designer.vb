@@ -27,11 +27,12 @@ Partial Class RaizOriginal
         Me.Salir = New System.Windows.Forms.Button()
         Me.Calcular = New System.Windows.Forms.Button()
         Me.Salida = New System.Windows.Forms.DataGridView()
-        Me.Ti = New System.Windows.Forms.TextBox()
-        Me.ln = New System.Windows.Forms.Label()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Ti = New System.Windows.Forms.TextBox()
+        Me.ln = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -86,24 +87,6 @@ Partial Class RaizOriginal
         Me.Salida.Size = New System.Drawing.Size(688, 171)
         Me.Salida.TabIndex = 19
         '
-        'Ti
-        '
-        Me.Ti.Location = New System.Drawing.Point(215, 265)
-        Me.Ti.Name = "Ti"
-        Me.Ti.Size = New System.Drawing.Size(98, 22)
-        Me.Ti.TabIndex = 18
-        '
-        'ln
-        '
-        Me.ln.AutoSize = True
-        Me.ln.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.ln.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ln.Location = New System.Drawing.Point(52, 261)
-        Me.ln.Name = "ln"
-        Me.ln.Size = New System.Drawing.Size(124, 25)
-        Me.ln.TabIndex = 17
-        Me.ln.Text = "Dame inicio"
-        '
         'Column1
         '
         Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
@@ -125,12 +108,42 @@ Partial Class RaizOriginal
         Me.Column3.MinimumWidth = 6
         Me.Column3.Name = "Column3"
         '
+        'Ti
+        '
+        Me.Ti.Location = New System.Drawing.Point(215, 265)
+        Me.Ti.Name = "Ti"
+        Me.Ti.Size = New System.Drawing.Size(98, 22)
+        Me.Ti.TabIndex = 18
+        '
+        'ln
+        '
+        Me.ln.AutoSize = True
+        Me.ln.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.ln.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ln.Location = New System.Drawing.Point(52, 261)
+        Me.ln.Name = "ln"
+        Me.ln.Size = New System.Drawing.Size(124, 25)
+        Me.ln.TabIndex = 17
+        Me.ln.Text = "Dame inicio"
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(356, 278)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(130, 39)
+        Me.Button1.TabIndex = 24
+        Me.Button1.Text = "Limpiar"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'RaizOriginal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.MetodosMaster.My.Resources.Resources.xx
         Me.ClientSize = New System.Drawing.Size(1261, 411)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Tc)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Salir)
@@ -157,4 +170,5 @@ Partial Class RaizOriginal
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As Button
 End Class

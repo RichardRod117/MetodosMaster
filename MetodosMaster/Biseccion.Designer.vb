@@ -36,8 +36,6 @@ Partial Class Biseccion
         Me.tb = New System.Windows.Forms.TextBox()
         Me.lb = New System.Windows.Forms.Label()
         Me.Salida = New System.Windows.Forms.DataGridView()
-        Me.txtResultado = New System.Windows.Forms.TextBox()
-        Me.Resultado = New System.Windows.Forms.Label()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -46,6 +44,9 @@ Partial Class Biseccion
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.txtResultado = New System.Windows.Forms.TextBox()
+        Me.Resultado = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -181,24 +182,6 @@ Partial Class Biseccion
         Me.Salida.Size = New System.Drawing.Size(886, 197)
         Me.Salida.TabIndex = 28
         '
-        'txtResultado
-        '
-        Me.txtResultado.Location = New System.Drawing.Point(920, 75)
-        Me.txtResultado.Name = "txtResultado"
-        Me.txtResultado.Size = New System.Drawing.Size(281, 22)
-        Me.txtResultado.TabIndex = 30
-        '
-        'Resultado
-        '
-        Me.Resultado.AutoSize = True
-        Me.Resultado.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Resultado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Resultado.Location = New System.Drawing.Point(943, 47)
-        Me.Resultado.Name = "Resultado"
-        Me.Resultado.Size = New System.Drawing.Size(231, 25)
-        Me.Resultado.TabIndex = 31
-        Me.Resultado.Text = "La raiz aproximada es:"
-        '
         'Column1
         '
         Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
@@ -256,12 +239,42 @@ Partial Class Biseccion
         Me.Column8.MinimumWidth = 6
         Me.Column8.Name = "Column8"
         '
+        'txtResultado
+        '
+        Me.txtResultado.Location = New System.Drawing.Point(920, 75)
+        Me.txtResultado.Name = "txtResultado"
+        Me.txtResultado.Size = New System.Drawing.Size(281, 22)
+        Me.txtResultado.TabIndex = 30
+        '
+        'Resultado
+        '
+        Me.Resultado.AutoSize = True
+        Me.Resultado.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Resultado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Resultado.Location = New System.Drawing.Point(943, 47)
+        Me.Resultado.Name = "Resultado"
+        Me.Resultado.Size = New System.Drawing.Size(231, 25)
+        Me.Resultado.TabIndex = 31
+        Me.Resultado.Text = "La raiz aproximada es:"
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(583, 211)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(130, 39)
+        Me.Button1.TabIndex = 32
+        Me.Button1.Text = "Limpiar"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Biseccion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.MetodosMaster.My.Resources.Resources.xx
         Me.ClientSize = New System.Drawing.Size(1283, 510)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Resultado)
         Me.Controls.Add(Me.txtResultado)
         Me.Controls.Add(Me.Salida)
@@ -305,4 +318,5 @@ Partial Class Biseccion
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As Button
 End Class

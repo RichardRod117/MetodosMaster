@@ -18,6 +18,16 @@
 
     Dim n, vx, vy, x(), y() As Single
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        txtCifras.Clear()
+        txtIb.Clear()
+        txtInterpolacion.Clear()
+        txtNum.Clear()
+        txtParejas.Clear()
+        dgvSalida.Rows.Clear()
+
+    End Sub
+
     Dim g As Graphics
 
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click

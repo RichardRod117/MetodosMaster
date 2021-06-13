@@ -45,6 +45,8 @@ Partial Class Integracion_rectangulos
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnGraficar = New System.Windows.Forms.Button()
         Me.btnCalcular = New System.Windows.Forms.Button()
+        Me.txtSalida = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Grafica, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -109,9 +111,11 @@ Partial Class Integracion_rectangulos
         'lblN
         '
         Me.lblN.AutoSize = True
-        Me.lblN.Location = New System.Drawing.Point(78, 385)
+        Me.lblN.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblN.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblN.Location = New System.Drawing.Point(12, 382)
         Me.lblN.Name = "lblN"
-        Me.lblN.Size = New System.Drawing.Size(57, 17)
+        Me.lblN.Size = New System.Drawing.Size(86, 25)
         Me.lblN.TabIndex = 29
         Me.lblN.Text = "Dame n"
         Me.lblN.Visible = False
@@ -119,56 +123,64 @@ Partial Class Integracion_rectangulos
         'lblCifras
         '
         Me.lblCifras.AutoSize = True
-        Me.lblCifras.Location = New System.Drawing.Point(78, 244)
+        Me.lblCifras.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblCifras.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblCifras.Location = New System.Drawing.Point(12, 241)
         Me.lblCifras.Name = "lblCifras"
-        Me.lblCifras.Size = New System.Drawing.Size(167, 17)
+        Me.lblCifras.Size = New System.Drawing.Size(256, 25)
         Me.lblCifras.TabIndex = 28
         Me.lblCifras.Text = "Dame cifras significativas"
         '
         'lblB
         '
         Me.lblB.AutoSize = True
-        Me.lblB.Location = New System.Drawing.Point(78, 335)
+        Me.lblB.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblB.Location = New System.Drawing.Point(12, 332)
         Me.lblB.Name = "lblB"
-        Me.lblB.Size = New System.Drawing.Size(123, 17)
+        Me.lblB.Size = New System.Drawing.Size(187, 25)
         Me.lblB.TabIndex = 27
         Me.lblB.Text = "Limite superior (b)"
         '
         'lblA
         '
         Me.lblA.AutoSize = True
-        Me.lblA.Location = New System.Drawing.Point(78, 289)
+        Me.lblA.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblA.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblA.Location = New System.Drawing.Point(12, 286)
         Me.lblA.Name = "lblA"
-        Me.lblA.Size = New System.Drawing.Size(115, 17)
+        Me.lblA.Size = New System.Drawing.Size(175, 25)
         Me.lblA.TabIndex = 26
         Me.lblA.Text = "Limite inferior (a)"
         '
         'lblFuncion
         '
         Me.lblFuncion.AutoSize = True
-        Me.lblFuncion.Location = New System.Drawing.Point(78, 201)
+        Me.lblFuncion.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblFuncion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblFuncion.Location = New System.Drawing.Point(12, 198)
         Me.lblFuncion.Name = "lblFuncion"
-        Me.lblFuncion.Size = New System.Drawing.Size(110, 17)
+        Me.lblFuncion.Size = New System.Drawing.Size(167, 25)
         Me.lblFuncion.TabIndex = 25
         Me.lblFuncion.Text = "Dame la funcion"
         '
         'txtA
         '
-        Me.txtA.Location = New System.Drawing.Point(277, 286)
+        Me.txtA.Location = New System.Drawing.Point(301, 286)
         Me.txtA.Name = "txtA"
         Me.txtA.Size = New System.Drawing.Size(100, 22)
         Me.txtA.TabIndex = 22
         '
         'txtFuncion
         '
-        Me.txtFuncion.Location = New System.Drawing.Point(277, 198)
+        Me.txtFuncion.Location = New System.Drawing.Point(301, 198)
         Me.txtFuncion.Name = "txtFuncion"
         Me.txtFuncion.Size = New System.Drawing.Size(100, 22)
         Me.txtFuncion.TabIndex = 20
         '
         'txtNum
         '
-        Me.txtNum.Location = New System.Drawing.Point(277, 382)
+        Me.txtNum.Location = New System.Drawing.Point(301, 382)
         Me.txtNum.Name = "txtNum"
         Me.txtNum.Size = New System.Drawing.Size(100, 22)
         Me.txtNum.TabIndex = 24
@@ -176,60 +188,88 @@ Partial Class Integracion_rectangulos
         '
         'txtCifras
         '
-        Me.txtCifras.Location = New System.Drawing.Point(277, 241)
+        Me.txtCifras.Location = New System.Drawing.Point(301, 241)
         Me.txtCifras.Name = "txtCifras"
         Me.txtCifras.Size = New System.Drawing.Size(100, 22)
         Me.txtCifras.TabIndex = 21
         '
         'txtB
         '
-        Me.txtB.Location = New System.Drawing.Point(277, 332)
+        Me.txtB.Location = New System.Drawing.Point(301, 332)
         Me.txtB.Name = "txtB"
         Me.txtB.Size = New System.Drawing.Size(100, 22)
         Me.txtB.TabIndex = 23
         '
         'btnSalir
         '
+        Me.btnSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.btnSalir.Location = New System.Drawing.Point(444, 366)
         Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(75, 23)
+        Me.btnSalir.Size = New System.Drawing.Size(130, 39)
         Me.btnSalir.TabIndex = 19
         Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
+        Me.btnSalir.UseVisualStyleBackColor = False
         '
         'btnLimpiar
         '
+        Me.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnLimpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.btnLimpiar.Location = New System.Drawing.Point(444, 305)
         Me.btnLimpiar.Name = "btnLimpiar"
-        Me.btnLimpiar.Size = New System.Drawing.Size(75, 23)
+        Me.btnLimpiar.Size = New System.Drawing.Size(130, 39)
         Me.btnLimpiar.TabIndex = 18
         Me.btnLimpiar.Text = "Limpiar"
-        Me.btnLimpiar.UseVisualStyleBackColor = True
+        Me.btnLimpiar.UseVisualStyleBackColor = False
         '
         'btnGraficar
         '
+        Me.btnGraficar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnGraficar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.btnGraficar.Location = New System.Drawing.Point(444, 244)
         Me.btnGraficar.Name = "btnGraficar"
-        Me.btnGraficar.Size = New System.Drawing.Size(75, 23)
+        Me.btnGraficar.Size = New System.Drawing.Size(130, 39)
         Me.btnGraficar.TabIndex = 17
         Me.btnGraficar.Text = "Graficar"
-        Me.btnGraficar.UseVisualStyleBackColor = True
+        Me.btnGraficar.UseVisualStyleBackColor = False
         '
         'btnCalcular
         '
+        Me.btnCalcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnCalcular.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.btnCalcular.Location = New System.Drawing.Point(444, 183)
         Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(75, 23)
+        Me.btnCalcular.Size = New System.Drawing.Size(130, 39)
         Me.btnCalcular.TabIndex = 16
         Me.btnCalcular.Text = "Calcular"
-        Me.btnCalcular.UseVisualStyleBackColor = True
+        Me.btnCalcular.UseVisualStyleBackColor = False
+        '
+        'txtSalida
+        '
+        Me.txtSalida.Location = New System.Drawing.Point(395, 655)
+        Me.txtSalida.Name = "txtSalida"
+        Me.txtSalida.Size = New System.Drawing.Size(100, 22)
+        Me.txtSalida.TabIndex = 51
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Label1.Location = New System.Drawing.Point(140, 655)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(212, 25)
+        Me.Label1.TabIndex = 50
+        Me.Label1.Text = "Integral Aproximada:"
         '
         'Integracion_rectangulos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.MetodosMaster.My.Resources.Resources.xx
-        Me.ClientSize = New System.Drawing.Size(1325, 668)
+        Me.ClientSize = New System.Drawing.Size(1325, 696)
+        Me.Controls.Add(Me.txtSalida)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Grafica)
         Me.Controls.Add(Me.dgvSalida)
         Me.Controls.Add(Me.lblN)
@@ -274,4 +314,6 @@ Partial Class Integracion_rectangulos
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnGraficar As Button
     Friend WithEvents btnCalcular As Button
+    Friend WithEvents txtSalida As TextBox
+    Friend WithEvents Label1 As Label
 End Class

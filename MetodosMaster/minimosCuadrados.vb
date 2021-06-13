@@ -14,7 +14,14 @@
 
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        tc.Clear()
+        tn.Clear()
+        tvx.Clear()
+        TextBox1.Clear()
+        dgvSalida.Rows.Clear()
 
+    End Sub
 
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
         xmedia = sx / n

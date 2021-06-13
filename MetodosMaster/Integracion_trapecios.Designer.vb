@@ -45,6 +45,8 @@ Partial Class Integracion_trapecios
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnGraficar = New System.Windows.Forms.Button()
         Me.btnCalcular = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtSalida = New System.Windows.Forms.TextBox()
         CType(Me.Grafica, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -55,7 +57,8 @@ Partial Class Integracion_trapecios
         Me.Grafica.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
         Me.Grafica.Legends.Add(Legend1)
-        Me.Grafica.Location = New System.Drawing.Point(658, 89)
+        Me.Grafica.Location = New System.Drawing.Point(731, 53)
+        Me.Grafica.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Grafica.Name = "Grafica"
         Series1.BorderWidth = 5
         Series1.ChartArea = "ChartArea1"
@@ -70,7 +73,7 @@ Partial Class Integracion_trapecios
         Series2.Name = "Series2"
         Me.Grafica.Series.Add(Series1)
         Me.Grafica.Series.Add(Series2)
-        Me.Grafica.Size = New System.Drawing.Size(683, 505)
+        Me.Grafica.Size = New System.Drawing.Size(630, 406)
         Me.Grafica.TabIndex = 47
         Me.Grafica.Text = "Chart1"
         '
@@ -78,11 +81,12 @@ Partial Class Integracion_trapecios
         '
         Me.dgvSalida.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvSalida.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.coln, Me.colIntegral, Me.colError})
-        Me.dgvSalida.Location = New System.Drawing.Point(96, 391)
+        Me.dgvSalida.Location = New System.Drawing.Point(41, 405)
+        Me.dgvSalida.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.dgvSalida.Name = "dgvSalida"
         Me.dgvSalida.RowHeadersWidth = 51
         Me.dgvSalida.RowTemplate.Height = 24
-        Me.dgvSalida.Size = New System.Drawing.Size(505, 225)
+        Me.dgvSalida.Size = New System.Drawing.Size(647, 232)
         Me.dgvSalida.TabIndex = 46
         '
         'coln
@@ -109,9 +113,12 @@ Partial Class Integracion_trapecios
         'lblN
         '
         Me.lblN.AutoSize = True
-        Me.lblN.Location = New System.Drawing.Point(122, 356)
+        Me.lblN.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblN.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblN.Location = New System.Drawing.Point(20, 347)
+        Me.lblN.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblN.Name = "lblN"
-        Me.lblN.Size = New System.Drawing.Size(57, 17)
+        Me.lblN.Size = New System.Drawing.Size(86, 25)
         Me.lblN.TabIndex = 45
         Me.lblN.Text = "Dame n"
         Me.lblN.Visible = False
@@ -119,117 +126,168 @@ Partial Class Integracion_trapecios
         'lblCifras
         '
         Me.lblCifras.AutoSize = True
-        Me.lblCifras.Location = New System.Drawing.Point(122, 215)
+        Me.lblCifras.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblCifras.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblCifras.Location = New System.Drawing.Point(20, 228)
+        Me.lblCifras.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblCifras.Name = "lblCifras"
-        Me.lblCifras.Size = New System.Drawing.Size(167, 17)
+        Me.lblCifras.Size = New System.Drawing.Size(256, 25)
         Me.lblCifras.TabIndex = 44
         Me.lblCifras.Text = "Dame cifras significativas"
         '
         'lblB
         '
         Me.lblB.AutoSize = True
-        Me.lblB.Location = New System.Drawing.Point(122, 306)
+        Me.lblB.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblB.Location = New System.Drawing.Point(20, 308)
+        Me.lblB.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblB.Name = "lblB"
-        Me.lblB.Size = New System.Drawing.Size(123, 17)
+        Me.lblB.Size = New System.Drawing.Size(187, 25)
         Me.lblB.TabIndex = 43
         Me.lblB.Text = "Limite superior (b)"
         '
         'lblA
         '
         Me.lblA.AutoSize = True
-        Me.lblA.Location = New System.Drawing.Point(122, 260)
+        Me.lblA.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblA.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblA.Location = New System.Drawing.Point(20, 267)
+        Me.lblA.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblA.Name = "lblA"
-        Me.lblA.Size = New System.Drawing.Size(115, 17)
+        Me.lblA.Size = New System.Drawing.Size(175, 25)
         Me.lblA.TabIndex = 42
         Me.lblA.Text = "Limite inferior (a)"
         '
         'lblFuncion
         '
         Me.lblFuncion.AutoSize = True
-        Me.lblFuncion.Location = New System.Drawing.Point(122, 172)
+        Me.lblFuncion.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblFuncion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblFuncion.Location = New System.Drawing.Point(20, 188)
+        Me.lblFuncion.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.lblFuncion.Name = "lblFuncion"
-        Me.lblFuncion.Size = New System.Drawing.Size(110, 17)
+        Me.lblFuncion.Size = New System.Drawing.Size(167, 25)
         Me.lblFuncion.TabIndex = 41
         Me.lblFuncion.Text = "Dame la funcion"
         '
         'txtA
         '
-        Me.txtA.Location = New System.Drawing.Point(321, 257)
+        Me.txtA.Location = New System.Drawing.Point(344, 263)
+        Me.txtA.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txtA.Name = "txtA"
-        Me.txtA.Size = New System.Drawing.Size(100, 22)
+        Me.txtA.Size = New System.Drawing.Size(160, 30)
         Me.txtA.TabIndex = 38
         '
         'txtFuncion
         '
-        Me.txtFuncion.Location = New System.Drawing.Point(321, 169)
+        Me.txtFuncion.Location = New System.Drawing.Point(344, 183)
+        Me.txtFuncion.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txtFuncion.Name = "txtFuncion"
-        Me.txtFuncion.Size = New System.Drawing.Size(100, 22)
+        Me.txtFuncion.Size = New System.Drawing.Size(160, 30)
         Me.txtFuncion.TabIndex = 36
         '
         'txtNum
         '
-        Me.txtNum.Location = New System.Drawing.Point(321, 353)
+        Me.txtNum.Location = New System.Drawing.Point(344, 343)
+        Me.txtNum.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txtNum.Name = "txtNum"
-        Me.txtNum.Size = New System.Drawing.Size(100, 22)
+        Me.txtNum.Size = New System.Drawing.Size(160, 30)
         Me.txtNum.TabIndex = 40
         Me.txtNum.Visible = False
         '
         'txtCifras
         '
-        Me.txtCifras.Location = New System.Drawing.Point(321, 212)
+        Me.txtCifras.Location = New System.Drawing.Point(344, 223)
+        Me.txtCifras.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txtCifras.Name = "txtCifras"
-        Me.txtCifras.Size = New System.Drawing.Size(100, 22)
+        Me.txtCifras.Size = New System.Drawing.Size(160, 30)
         Me.txtCifras.TabIndex = 37
         '
         'txtB
         '
-        Me.txtB.Location = New System.Drawing.Point(321, 303)
+        Me.txtB.Location = New System.Drawing.Point(344, 303)
+        Me.txtB.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.txtB.Name = "txtB"
-        Me.txtB.Size = New System.Drawing.Size(100, 22)
+        Me.txtB.Size = New System.Drawing.Size(160, 30)
         Me.txtB.TabIndex = 39
         '
         'btnSalir
         '
-        Me.btnSalir.Location = New System.Drawing.Point(488, 337)
+        Me.btnSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.btnSalir.Location = New System.Drawing.Point(578, 244)
+        Me.btnSalir.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(75, 23)
+        Me.btnSalir.Size = New System.Drawing.Size(122, 36)
         Me.btnSalir.TabIndex = 35
         Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
+        Me.btnSalir.UseVisualStyleBackColor = False
         '
         'btnLimpiar
         '
-        Me.btnLimpiar.Location = New System.Drawing.Point(488, 276)
+        Me.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnLimpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.btnLimpiar.Location = New System.Drawing.Point(578, 198)
+        Me.btnLimpiar.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.btnLimpiar.Name = "btnLimpiar"
-        Me.btnLimpiar.Size = New System.Drawing.Size(75, 23)
+        Me.btnLimpiar.Size = New System.Drawing.Size(122, 36)
         Me.btnLimpiar.TabIndex = 34
         Me.btnLimpiar.Text = "Limpiar"
-        Me.btnLimpiar.UseVisualStyleBackColor = True
+        Me.btnLimpiar.UseVisualStyleBackColor = False
         '
         'btnGraficar
         '
-        Me.btnGraficar.Location = New System.Drawing.Point(488, 215)
+        Me.btnGraficar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnGraficar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.btnGraficar.Location = New System.Drawing.Point(578, 141)
+        Me.btnGraficar.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.btnGraficar.Name = "btnGraficar"
-        Me.btnGraficar.Size = New System.Drawing.Size(75, 23)
+        Me.btnGraficar.Size = New System.Drawing.Size(122, 36)
         Me.btnGraficar.TabIndex = 33
         Me.btnGraficar.Text = "Graficar"
-        Me.btnGraficar.UseVisualStyleBackColor = True
+        Me.btnGraficar.UseVisualStyleBackColor = False
         '
         'btnCalcular
         '
-        Me.btnCalcular.Location = New System.Drawing.Point(488, 154)
+        Me.btnCalcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnCalcular.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.btnCalcular.Location = New System.Drawing.Point(578, 95)
+        Me.btnCalcular.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(75, 23)
+        Me.btnCalcular.Size = New System.Drawing.Size(122, 36)
         Me.btnCalcular.TabIndex = 32
         Me.btnCalcular.Text = "Calcular"
-        Me.btnCalcular.UseVisualStyleBackColor = True
+        Me.btnCalcular.UseVisualStyleBackColor = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Label1.Location = New System.Drawing.Point(956, 504)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(91, 25)
+        Me.Label1.TabIndex = 48
+        Me.Label1.Text = "Integral:"
+        '
+        'txtSalida
+        '
+        Me.txtSalida.Location = New System.Drawing.Point(1083, 504)
+        Me.txtSalida.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txtSalida.Name = "txtSalida"
+        Me.txtSalida.Size = New System.Drawing.Size(160, 30)
+        Me.txtSalida.TabIndex = 49
         '
         'Integracion_trapecios
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.MetodosMaster.My.Resources.Resources.xx
-        Me.ClientSize = New System.Drawing.Size(1363, 611)
+        Me.ClientSize = New System.Drawing.Size(1375, 675)
+        Me.Controls.Add(Me.txtSalida)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Grafica)
         Me.Controls.Add(Me.dgvSalida)
         Me.Controls.Add(Me.lblN)
@@ -246,6 +304,8 @@ Partial Class Integracion_trapecios
         Me.Controls.Add(Me.btnLimpiar)
         Me.Controls.Add(Me.btnGraficar)
         Me.Controls.Add(Me.btnCalcular)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Name = "Integracion_trapecios"
         Me.Text = "Integracion_trapecios"
         CType(Me.Grafica, System.ComponentModel.ISupportInitialize).EndInit()
@@ -274,4 +334,6 @@ Partial Class Integracion_trapecios
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnGraficar As Button
     Friend WithEvents btnCalcular As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtSalida As TextBox
 End Class

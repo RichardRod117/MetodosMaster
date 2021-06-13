@@ -22,10 +22,10 @@ Partial Class Simpson_1_3
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.dgvSalida = New System.Windows.Forms.DataGridView()
         Me.coln = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -45,31 +45,33 @@ Partial Class Simpson_1_3
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnGraficar = New System.Windows.Forms.Button()
         Me.btnCalcular = New System.Windows.Forms.Button()
+        Me.txtSalida = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.Grafica, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Grafica
         '
-        ChartArea2.Name = "ChartArea1"
-        Me.Grafica.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.Grafica.Legends.Add(Legend2)
+        ChartArea1.Name = "ChartArea1"
+        Me.Grafica.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Grafica.Legends.Add(Legend1)
         Me.Grafica.Location = New System.Drawing.Point(675, 84)
         Me.Grafica.Name = "Grafica"
-        Series3.BorderWidth = 5
-        Series3.ChartArea = "ChartArea1"
-        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
-        Series3.Color = System.Drawing.Color.Red
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Series4.ChartArea = "ChartArea1"
-        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area
-        Series4.Color = System.Drawing.Color.Navy
-        Series4.Legend = "Legend1"
-        Series4.Name = "Series2"
-        Me.Grafica.Series.Add(Series3)
-        Me.Grafica.Series.Add(Series4)
+        Series1.BorderWidth = 5
+        Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series1.Color = System.Drawing.Color.Red
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Series2.ChartArea = "ChartArea1"
+        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area
+        Series2.Color = System.Drawing.Color.Navy
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series2"
+        Me.Grafica.Series.Add(Series1)
+        Me.Grafica.Series.Add(Series2)
         Me.Grafica.Size = New System.Drawing.Size(683, 505)
         Me.Grafica.TabIndex = 63
         Me.Grafica.Text = "Chart1"
@@ -109,9 +111,11 @@ Partial Class Simpson_1_3
         'lblN
         '
         Me.lblN.AutoSize = True
-        Me.lblN.Location = New System.Drawing.Point(139, 351)
+        Me.lblN.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblN.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblN.Location = New System.Drawing.Point(30, 348)
         Me.lblN.Name = "lblN"
-        Me.lblN.Size = New System.Drawing.Size(57, 17)
+        Me.lblN.Size = New System.Drawing.Size(86, 25)
         Me.lblN.TabIndex = 61
         Me.lblN.Text = "Dame n"
         Me.lblN.Visible = False
@@ -119,36 +123,44 @@ Partial Class Simpson_1_3
         'lblCifras
         '
         Me.lblCifras.AutoSize = True
-        Me.lblCifras.Location = New System.Drawing.Point(139, 210)
+        Me.lblCifras.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblCifras.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblCifras.Location = New System.Drawing.Point(30, 207)
         Me.lblCifras.Name = "lblCifras"
-        Me.lblCifras.Size = New System.Drawing.Size(167, 17)
+        Me.lblCifras.Size = New System.Drawing.Size(256, 25)
         Me.lblCifras.TabIndex = 60
         Me.lblCifras.Text = "Dame cifras significativas"
         '
         'lblB
         '
         Me.lblB.AutoSize = True
-        Me.lblB.Location = New System.Drawing.Point(139, 301)
+        Me.lblB.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblB.Location = New System.Drawing.Point(30, 298)
         Me.lblB.Name = "lblB"
-        Me.lblB.Size = New System.Drawing.Size(123, 17)
+        Me.lblB.Size = New System.Drawing.Size(187, 25)
         Me.lblB.TabIndex = 59
         Me.lblB.Text = "Limite superior (b)"
         '
         'lblA
         '
         Me.lblA.AutoSize = True
-        Me.lblA.Location = New System.Drawing.Point(139, 255)
+        Me.lblA.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblA.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblA.Location = New System.Drawing.Point(30, 252)
         Me.lblA.Name = "lblA"
-        Me.lblA.Size = New System.Drawing.Size(115, 17)
+        Me.lblA.Size = New System.Drawing.Size(175, 25)
         Me.lblA.TabIndex = 58
         Me.lblA.Text = "Limite inferior (a)"
         '
         'lblFuncion
         '
         Me.lblFuncion.AutoSize = True
-        Me.lblFuncion.Location = New System.Drawing.Point(139, 167)
+        Me.lblFuncion.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblFuncion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.lblFuncion.Location = New System.Drawing.Point(30, 164)
         Me.lblFuncion.Name = "lblFuncion"
-        Me.lblFuncion.Size = New System.Drawing.Size(110, 17)
+        Me.lblFuncion.Size = New System.Drawing.Size(167, 25)
         Me.lblFuncion.TabIndex = 57
         Me.lblFuncion.Text = "Dame la funcion"
         '
@@ -190,46 +202,74 @@ Partial Class Simpson_1_3
         '
         'btnSalir
         '
+        Me.btnSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.btnSalir.Location = New System.Drawing.Point(505, 332)
         Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(75, 23)
+        Me.btnSalir.Size = New System.Drawing.Size(130, 39)
         Me.btnSalir.TabIndex = 51
         Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
+        Me.btnSalir.UseVisualStyleBackColor = False
         '
         'btnLimpiar
         '
+        Me.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnLimpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.btnLimpiar.Location = New System.Drawing.Point(505, 271)
         Me.btnLimpiar.Name = "btnLimpiar"
-        Me.btnLimpiar.Size = New System.Drawing.Size(75, 23)
+        Me.btnLimpiar.Size = New System.Drawing.Size(130, 39)
         Me.btnLimpiar.TabIndex = 50
         Me.btnLimpiar.Text = "Limpiar"
-        Me.btnLimpiar.UseVisualStyleBackColor = True
+        Me.btnLimpiar.UseVisualStyleBackColor = False
         '
         'btnGraficar
         '
+        Me.btnGraficar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnGraficar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.btnGraficar.Location = New System.Drawing.Point(505, 210)
         Me.btnGraficar.Name = "btnGraficar"
-        Me.btnGraficar.Size = New System.Drawing.Size(75, 23)
+        Me.btnGraficar.Size = New System.Drawing.Size(130, 39)
         Me.btnGraficar.TabIndex = 49
         Me.btnGraficar.Text = "Graficar"
-        Me.btnGraficar.UseVisualStyleBackColor = True
+        Me.btnGraficar.UseVisualStyleBackColor = False
         '
         'btnCalcular
         '
+        Me.btnCalcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnCalcular.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.btnCalcular.Location = New System.Drawing.Point(505, 149)
         Me.btnCalcular.Name = "btnCalcular"
-        Me.btnCalcular.Size = New System.Drawing.Size(75, 23)
+        Me.btnCalcular.Size = New System.Drawing.Size(130, 39)
         Me.btnCalcular.TabIndex = 48
         Me.btnCalcular.Text = "Calcular"
-        Me.btnCalcular.UseVisualStyleBackColor = True
+        Me.btnCalcular.UseVisualStyleBackColor = False
+        '
+        'txtSalida
+        '
+        Me.txtSalida.Location = New System.Drawing.Point(444, 635)
+        Me.txtSalida.Name = "txtSalida"
+        Me.txtSalida.Size = New System.Drawing.Size(100, 22)
+        Me.txtSalida.TabIndex = 65
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Label1.Location = New System.Drawing.Point(203, 631)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(212, 25)
+        Me.Label1.TabIndex = 66
+        Me.Label1.Text = "Integral Aproximada:"
         '
         'Simpson_1_3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.MetodosMaster.My.Resources.Resources.xx
-        Me.ClientSize = New System.Drawing.Size(1420, 623)
+        Me.ClientSize = New System.Drawing.Size(1420, 669)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtSalida)
         Me.Controls.Add(Me.Grafica)
         Me.Controls.Add(Me.dgvSalida)
         Me.Controls.Add(Me.lblN)
@@ -274,4 +314,6 @@ Partial Class Simpson_1_3
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnGraficar As Button
     Friend WithEvents btnCalcular As Button
+    Friend WithEvents txtSalida As TextBox
+    Friend WithEvents Label1 As Label
 End Class

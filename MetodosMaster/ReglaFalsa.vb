@@ -58,4 +58,13 @@ Public Class ReglaFalsa
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        tb.Clear()
+        tc.Clear()
+        tf.Clear()
+        txtResultado.Clear()
+        Ta.Clear()
+        Salida.Rows.Clear()
+    End Sub
 End Class

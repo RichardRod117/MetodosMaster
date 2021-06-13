@@ -25,10 +25,11 @@ Partial Class Imp
         Me.Salir = New System.Windows.Forms.Button()
         Me.Calcular = New System.Windows.Forms.Button()
         Me.Salida = New System.Windows.Forms.DataGridView()
-        Me.Tn = New System.Windows.Forms.TextBox()
-        Me.ln = New System.Windows.Forms.Label()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Tn = New System.Windows.Forms.TextBox()
+        Me.ln = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -47,7 +48,7 @@ Partial Class Imp
         '
         Me.Calcular.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Calcular.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Calcular.Location = New System.Drawing.Point(551, 242)
+        Me.Calcular.Location = New System.Drawing.Point(622, 287)
         Me.Calcular.Name = "Calcular"
         Me.Calcular.Size = New System.Drawing.Size(130, 39)
         Me.Calcular.TabIndex = 8
@@ -64,6 +65,20 @@ Partial Class Imp
         Me.Salida.RowTemplate.Height = 24
         Me.Salida.Size = New System.Drawing.Size(429, 150)
         Me.Salida.TabIndex = 7
+        '
+        'Column1
+        '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column1.HeaderText = "Indice"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column2.HeaderText = "Impares"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
         '
         'Tn
         '
@@ -83,19 +98,16 @@ Partial Class Imp
         Me.ln.TabIndex = 5
         Me.ln.Text = "Dame numero de impares"
         '
-        'Column1
+        'Button1
         '
-        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column1.HeaderText = "Indice"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column2.HeaderText = "Impares"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(536, 242)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(130, 39)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "Limpiar"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Imp
         '
@@ -103,6 +115,7 @@ Partial Class Imp
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.MetodosMaster.My.Resources.Resources.xx
         Me.ClientSize = New System.Drawing.Size(1035, 376)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Salir)
         Me.Controls.Add(Me.Calcular)
         Me.Controls.Add(Me.Salida)
@@ -124,4 +137,5 @@ Partial Class Imp
     Friend WithEvents ln As Label
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As Button
 End Class

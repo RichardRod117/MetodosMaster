@@ -44,6 +44,7 @@ Partial Class minimosCuadrados
         Me.Gráfica = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnCalcular = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Gráfica, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -151,7 +152,7 @@ Partial Class minimosCuadrados
         Me.graficar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.graficar.Location = New System.Drawing.Point(968, 125)
         Me.graficar.Name = "graficar"
-        Me.graficar.Size = New System.Drawing.Size(158, 41)
+        Me.graficar.Size = New System.Drawing.Size(158, 31)
         Me.graficar.TabIndex = 37
         Me.graficar.Text = "graficar"
         Me.graficar.UseVisualStyleBackColor = False
@@ -226,12 +227,24 @@ Partial Class minimosCuadrados
         Me.btnCalcular.Text = "Calcular"
         Me.btnCalcular.UseVisualStyleBackColor = False
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Button2.Location = New System.Drawing.Point(692, 221)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(158, 31)
+        Me.Button2.TabIndex = 43
+        Me.Button2.Text = "Limpiar"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'minimosCuadrados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.MetodosMaster.My.Resources.Resources.xx
         Me.ClientSize = New System.Drawing.Size(1175, 617)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnCalcular)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Gráfica)
@@ -273,4 +286,5 @@ Partial Class minimosCuadrados
     Friend WithEvents Gráfica As DataVisualization.Charting.Chart
     Friend WithEvents Button1 As Button
     Friend WithEvents btnCalcular As Button
+    Friend WithEvents Button2 As Button
 End Class

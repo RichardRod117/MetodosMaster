@@ -12,6 +12,7 @@ Public Class Integracion_trapecios
         txtNum.Clear()
         dgvSalida.Rows.Clear()
         Grafica.Series.Clear()
+        txtSalida.Clear()
     End Sub
 
     Private Sub btnGraficar_Click(sender As Object, e As EventArgs) Handles btnGraficar.Click
@@ -29,7 +30,8 @@ Public Class Integracion_trapecios
 
     Dim a, b, h, suma, ec, err(500), integral(500), j As Single
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
-        End
+        Me.Hide()
+        Main.Show()
     End Sub
 
     Function f(x As Single) As Single
@@ -80,7 +82,7 @@ Public Class Integracion_trapecios
             dgvSalida.Rows.Add(n, Math.Round(integral(i), redon), Math.Round(err(i), redon))
 
         Loop
-
+        txtSalida.Text = Math.Round(integral(i), redon)
 
     End Sub
 

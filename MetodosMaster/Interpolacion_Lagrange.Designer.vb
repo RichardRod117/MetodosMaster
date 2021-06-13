@@ -45,6 +45,7 @@ Partial Class Interpolacion_Lagrange
         Me.lblParejas = New System.Windows.Forms.Label()
         Me.lblCifras = New System.Windows.Forms.Label()
         Me.Grafica = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Grafica, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -122,7 +123,7 @@ Partial Class Interpolacion_Lagrange
         '
         Me.btnSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        Me.btnSalir.Location = New System.Drawing.Point(1093, 423)
+        Me.btnSalir.Location = New System.Drawing.Point(1093, 467)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(118, 37)
         Me.btnSalir.TabIndex = 25
@@ -240,12 +241,24 @@ Partial Class Interpolacion_Lagrange
         Me.Grafica.TabIndex = 34
         Me.Grafica.Text = "Chart1"
         '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Button1.Location = New System.Drawing.Point(1093, 404)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(118, 37)
+        Me.Button1.TabIndex = 35
+        Me.Button1.Text = "Limpiar"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
         'Interpolacion_Lagrange
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.MetodosMaster.My.Resources.Resources.xx
         Me.ClientSize = New System.Drawing.Size(1320, 630)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Grafica)
         Me.Controls.Add(Me.txtInterpolacion)
         Me.Controls.Add(Me.Label2)
@@ -291,4 +304,5 @@ Partial Class Interpolacion_Lagrange
     Friend WithEvents lblParejas As Label
     Friend WithEvents lblCifras As Label
     Friend WithEvents Grafica As DataVisualization.Charting.Chart
+    Friend WithEvents Button1 As Button
 End Class

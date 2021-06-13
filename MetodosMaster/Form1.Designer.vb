@@ -212,7 +212,10 @@ Partial Class Main
         Me.Controls.Add(Me.Impares)
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Métodos numéricos | Metodicos"
+=======
         Me.Text = "MENÚ"
+>>>>>>> 81d22f83657284ee2307778e5452bce6303f3751
         Me.ResumeLayout(False)
 
     End Sub

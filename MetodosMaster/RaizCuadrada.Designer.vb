@@ -25,6 +25,9 @@ Partial Class RaizC2
         Me.Salir = New System.Windows.Forms.Button()
         Me.Calcular = New System.Windows.Forms.Button()
         Me.Salida = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Ti = New System.Windows.Forms.TextBox()
         Me.ln = New System.Windows.Forms.Label()
         Me.Tc = New System.Windows.Forms.TextBox()
@@ -34,9 +37,7 @@ Partial Class RaizC2
         Me.Label2 = New System.Windows.Forms.Label()
         Me.tfd = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -73,6 +74,27 @@ Partial Class RaizC2
         Me.Salida.RowTemplate.Height = 24
         Me.Salida.Size = New System.Drawing.Size(688, 171)
         Me.Salida.TabIndex = 12
+        '
+        'Column1
+        '
+        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column1.HeaderText = "Indice"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column2.HeaderText = "Raiz"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.Column3.HeaderText = "Error"
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
         '
         'Ti
         '
@@ -155,26 +177,16 @@ Partial Class RaizC2
         Me.Label3.TabIndex = 20
         Me.Label3.Text = "Dame derivada"
         '
-        'Column1
+        'Button1
         '
-        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column1.HeaderText = "Indice"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column2.HeaderText = "Raiz"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.HeaderText = "Error"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(633, 430)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(130, 39)
+        Me.Button1.TabIndex = 22
+        Me.Button1.Text = "Limpiar"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'RaizC2
         '
@@ -182,6 +194,7 @@ Partial Class RaizC2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.MetodosMaster.My.Resources.Resources.xx
         Me.ClientSize = New System.Drawing.Size(1190, 481)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.tfd)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.tf)
@@ -219,4 +232,5 @@ Partial Class RaizC2
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As Button
 End Class

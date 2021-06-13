@@ -24,4 +24,10 @@
         Me.Hide()
         Main.Show()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Ti.Clear()
+        Tc.Clear()
+        Salida.Rows.Clear()
+    End Sub
 End Class

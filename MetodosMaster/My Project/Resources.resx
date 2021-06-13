@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="nr" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,23 +127,32 @@
   <data name="BiseccionImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BiseccionImg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lineas-en-simetria_3840x2160_xtrafondos.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lineas-en-simetria_3840x2160_xtrafondos.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pngtree-pink-shaggy-fur-animal-soft-texture-background-design-image_432386" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-pink-shaggy-fur-animal-soft-texture-background-design-image_432386.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="portada1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\portada1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="18220167-hermoso-cielo-nocturno-africano-y-muchas-estrellas-fondo-galaxia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\18220167-hermoso-cielo-nocturno-africano-y-muchas-estrellas-fondo-galaxia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="xx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="formulaRaiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\formulaRaiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="nr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="formulaRaiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formulaRaiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lineas-en-simetria_3840x2160_xtrafondos.com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lineas-en-simetria_3840x2160_xtrafondos.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="18220167-hermoso-cielo-nocturno-africano-y-muchas-estrellas-fondo-galaxia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\18220167-hermoso-cielo-nocturno-africano-y-muchas-estrellas-fondo-galaxia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-pink-shaggy-fur-animal-soft-texture-background-design-image_432386" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-pink-shaggy-fur-animal-soft-texture-background-design-image_432386.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,10 +160,10 @@
   <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="portada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\portada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="xx" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\xx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="portada2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\portada2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
