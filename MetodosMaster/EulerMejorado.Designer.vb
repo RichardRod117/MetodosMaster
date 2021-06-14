@@ -41,6 +41,8 @@ Partial Class EulerMejorado
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtResult = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -217,12 +219,32 @@ Partial Class EulerMejorado
         Me.Label1.TabIndex = 85
         Me.Label1.Text = "Dame x()"
         '
+        'txtResult
+        '
+        Me.txtResult.Location = New System.Drawing.Point(730, 524)
+        Me.txtResult.Name = "txtResult"
+        Me.txtResult.Size = New System.Drawing.Size(160, 22)
+        Me.txtResult.TabIndex = 104
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Label7.Location = New System.Drawing.Point(472, 520)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(238, 25)
+        Me.Label7.TabIndex = 105
+        Me.Label7.Text = "El valor aproximado es:"
+        '
         'EulerMejorado
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.MetodosMaster.My.Resources.Resources.xx
-        Me.ClientSize = New System.Drawing.Size(988, 530)
+        Me.ClientSize = New System.Drawing.Size(988, 577)
+        Me.Controls.Add(Me.txtResult)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.txf)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button3)
@@ -266,4 +288,6 @@ Partial Class EulerMejorado
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents txtResult As TextBox
+    Friend WithEvents Label7 As Label
 End Class

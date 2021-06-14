@@ -9,6 +9,9 @@ Public Class Euler
         th.Clear()
         tf.Clear()
         tc.Clear()
+        txtResult.Clear()
+        dgvSalida.Rows.Clear()
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -46,9 +49,9 @@ Public Class Euler
             y(i) = y(i - 1) + h * f(x(i - 1), y(i - 1)) 'A=y(i - 1) + h * f(x(i - 1), y(i - 1))
             'y(i)=y(i-1) +(h/2)*(f(x(i - 1), y(i - 1))+f(x(i - 1)+h, A)) USAR DOBLE PARA QUE NO SE PASE
             dgvSalida.Rows.Add(i, Math.Round(x(i), redon), Math.Round(y(i), redon))
+            txtResult.Text = Math.Round(y(i), redon)
             i += 1
             j = j + h
-
 
         Loop
 

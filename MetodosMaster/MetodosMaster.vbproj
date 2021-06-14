@@ -115,6 +115,12 @@
     <Compile Include="Impares.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="INewton.Designer.vb">
+      <DependentUpon>INewton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INewton.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Integracion_rectangulos.Designer.vb">
       <DependentUpon>Integracion_rectangulos.vb</DependentUpon>
     </Compile>
@@ -178,6 +184,12 @@
     <Compile Include="ReglaFalsa.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="RungeKutta.Designer.vb">
+      <DependentUpon>RungeKutta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RungeKutta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Simpson_1_3.Designer.vb">
       <DependentUpon>Simpson_1_3.vb</DependentUpon>
     </Compile>
@@ -203,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Impares.resx">
       <DependentUpon>Impares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INewton.resx">
+      <DependentUpon>INewton.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Integracion_rectangulos.resx">
       <DependentUpon>Integracion_rectangulos.vb</DependentUpon>
@@ -233,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReglaFalsa.resx">
       <DependentUpon>ReglaFalsa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RungeKutta.resx">
+      <DependentUpon>RungeKutta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Simpson_1_3.resx">
       <DependentUpon>Simpson_1_3.vb</DependentUpon>
