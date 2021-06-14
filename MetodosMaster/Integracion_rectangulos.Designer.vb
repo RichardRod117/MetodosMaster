@@ -287,6 +287,7 @@ Partial Class Integracion_rectangulos
         Me.Controls.Add(Me.btnGraficar)
         Me.Controls.Add(Me.btnCalcular)
         Me.Name = "Integracion_rectangulos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Integracion_rectangulos"
         CType(Me.Grafica, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).EndInit()

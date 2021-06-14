@@ -262,6 +262,7 @@ Partial Class EulerMejorado
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "EulerMejorado"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "EulerMejorado"
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

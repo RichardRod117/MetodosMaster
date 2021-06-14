@@ -22,10 +22,10 @@ Partial Class INewton
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.txtS = New System.Windows.Forms.TextBox()
         Me.lblS = New System.Windows.Forms.Label()
         Me.txtM = New System.Windows.Forms.TextBox()
@@ -99,22 +99,22 @@ Partial Class INewton
         '
         'Grafica
         '
-        ChartArea2.Name = "ChartArea1"
-        Me.Grafica.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.Grafica.Legends.Add(Legend2)
+        ChartArea1.Name = "ChartArea1"
+        Me.Grafica.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Grafica.Legends.Add(Legend1)
         Me.Grafica.Location = New System.Drawing.Point(722, 52)
         Me.Grafica.Name = "Grafica"
-        Series3.ChartArea = "ChartArea1"
-        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Series4.ChartArea = "ChartArea1"
-        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point
-        Series4.Legend = "Legend1"
-        Series4.Name = "Series2"
-        Me.Grafica.Series.Add(Series3)
-        Me.Grafica.Series.Add(Series4)
+        Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point
+        Series1.Legend = "Legend1"
+        Series1.Name = "Series1"
+        Series2.ChartArea = "ChartArea1"
+        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series2"
+        Me.Grafica.Series.Add(Series1)
+        Me.Grafica.Series.Add(Series2)
         Me.Grafica.Size = New System.Drawing.Size(603, 480)
         Me.Grafica.TabIndex = 37
         Me.Grafica.Text = "Chart1"
@@ -366,6 +366,7 @@ Partial Class INewton
         Me.Controls.Add(Me.lblValorInter)
         Me.Controls.Add(Me.lblPar)
         Me.Name = "INewton"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "INewton"
         CType(Me.Grafica, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvSal2, System.ComponentModel.ISupportInitialize).EndInit()

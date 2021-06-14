@@ -287,6 +287,7 @@ Partial Class Simpson_1_3
         Me.Controls.Add(Me.btnGraficar)
         Me.Controls.Add(Me.btnCalcular)
         Me.Name = "Simpson_1_3"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Simpson_1_3"
         CType(Me.Grafica, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).EndInit()

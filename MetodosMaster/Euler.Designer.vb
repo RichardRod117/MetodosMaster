@@ -262,6 +262,7 @@ Partial Class Euler
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Euler"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Euler"
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

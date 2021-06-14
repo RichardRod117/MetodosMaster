@@ -262,6 +262,7 @@ Partial Class RungeKutta
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "RungeKutta"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RungeKutta"
         CType(Me.dgvSalida, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
