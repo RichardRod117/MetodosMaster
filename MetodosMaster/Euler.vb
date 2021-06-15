@@ -44,7 +44,7 @@ Public Class Euler
         i = 1
         j = x(0)
 
-        Do While xf > j
+        Do While xf >= j
             x(i) = x(i - 1) + h
             y(i) = y(i - 1) + h * f(x(i - 1), y(i - 1)) 'A=y(i - 1) + h * f(x(i - 1), y(i - 1))
             'y(i)=y(i-1) +(h/2)*(f(x(i - 1), y(i - 1))+f(x(i - 1)+h, A)) USAR DOBLE PARA QUE NO SE PASE
