@@ -19,6 +19,9 @@ Public Class Integracion_rectangulos
         g = CreateGraphics()
         j = a - 1
         Do While j <= b + 1
+            If j = 0 Then
+                j = 0.1
+            End If
             If j < b And j > a Then
                 Grafica.Series(1).Points.AddXY(Math.Round(j, 2), Math.Round(f(j), 2))
             End If

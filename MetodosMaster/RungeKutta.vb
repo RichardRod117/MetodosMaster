@@ -49,7 +49,7 @@ Public Class RungeKutta
         'i = 1
         j = x(i)
 
-        Do While xf > j
+        Do While xf > j And Not AreSingleEquals(xf, j)
             x(i + 1) = x(i) + h
 
             k1(i) = f(x(i), y(i))
@@ -65,4 +65,10 @@ Public Class RungeKutta
         txtResult.Text = Math.Round(y(i), redon)
 
     End Sub
+
+    Function AreSingleEquals(n1 As Single, n2 As Single) As Boolean
+        Dim acceptableDifference As Double = 0.000001
+        Dim absoluteDifference As Double = Math.Abs(n1 - n2)
+        Return absoluteDifference <= acceptableDifference
+    End Function
 End Class

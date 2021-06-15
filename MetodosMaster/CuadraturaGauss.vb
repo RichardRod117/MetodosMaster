@@ -19,6 +19,9 @@ Public Class CuadraturaGauss
         g = CreateGraphics()
         j = a - 1
         Do While j <= b + 1
+            If j = 0 Then
+                j = 0.1
+            End If
             If j < b And j > a Then
                 chartSalida.Series(0).Points.AddXY(Math.Round(j, 2), f(j))
             End If

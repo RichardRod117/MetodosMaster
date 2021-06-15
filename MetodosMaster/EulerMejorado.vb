@@ -33,6 +33,7 @@ Public Class EulerMejorado
     End Function
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        i = 0
         y(i) = ty.Text
         x(i) = tx.Text
         c = tc.Text
@@ -44,7 +45,7 @@ Public Class EulerMejorado
         i = 1
         j = x(0)
 
-        Do While xf >= j
+        Do While xf >= j And Not AreSingleEquals(xf, j)
             x(i) = x(i - 1) + h
             A = y(i - 1) + h * f(x(i - 1), y(i - 1))
             y(i) = y(i - 1) + (h / 2) * (f(x(i - 1), y(i - 1)) + f(x(i - 1) + h, A))
@@ -56,6 +57,12 @@ Public Class EulerMejorado
 
         Loop
 
-
     End Sub
+
+    Function AreSingleEquals(n1 As Single, n2 As Single) As Boolean
+        Dim acceptableDifference As Double = 0.000001
+        Dim absoluteDifference As Double = Math.Abs(n1 - n2)
+        Return absoluteDifference <= acceptableDifference
+    End Function
+
 End Class
