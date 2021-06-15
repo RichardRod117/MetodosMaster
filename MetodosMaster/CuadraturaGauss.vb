@@ -78,6 +78,7 @@ Public Class CuadraturaGauss
             dgvSalida.Rows.Add(n, Math.Round(integral(i), redon), Math.Round(err(i), redon))
 
         Loop
+        TextBox1.Text = Math.Round(integral(i), redon)
 
     End Sub
 
@@ -88,6 +89,7 @@ Public Class CuadraturaGauss
         txtB.Clear()
         txtCifras.Clear()
         dgvSalida.Rows.Clear()
+        TextBox1.Clear()
         chartSalida.Series.Clear()
 
     End Sub

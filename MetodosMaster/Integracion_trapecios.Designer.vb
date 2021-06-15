@@ -65,12 +65,12 @@ Partial Class Integracion_trapecios
         Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
         Series1.Color = System.Drawing.Color.Red
         Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
+        Series1.Name = "Linea"
         Series2.ChartArea = "ChartArea1"
         Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area
         Series2.Color = System.Drawing.Color.Navy
         Series2.Legend = "Legend1"
-        Series2.Name = "Series2"
+        Series2.Name = "Area"
         Me.Grafica.Series.Add(Series1)
         Me.Grafica.Series.Add(Series2)
         Me.Grafica.Size = New System.Drawing.Size(630, 406)
